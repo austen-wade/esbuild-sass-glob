@@ -1,0 +1,24 @@
+{
+	"name": "esbuild-sass-glob",
+	"version": "1.0.0",
+	"description": "Allows glob imports with esbuild-sass-plugin",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "github.com/austen-wade/esbuild-sass-glob"
+	},
+	"keywords": [
+		"esbuild",
+		"sass",
+		"glob",
+		"imports"
+	],
+	"author": "austen-wade",
+	"license": "MIT",
+	"dependencies": {
+		"fast-glob": "^3.2.11"
+	}
+}
