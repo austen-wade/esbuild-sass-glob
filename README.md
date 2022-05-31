@@ -15,3 +15,5 @@ esbuild.build({
     ...
 })
 ```
+
+Inspired by webpack-import-glob-loader
