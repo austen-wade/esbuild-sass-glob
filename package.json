@@ -1,8 +1,12 @@
 {
 	"name": "esbuild-sass-glob",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"description": "Allows glob imports with esbuild-sass-plugin",
 	"main": "index.js",
+	"files": [
+		"LICENSE.md",
+		"index.js"
+	],
 	"scripts": {
 		"test": "mocha test/build.test.js",
 		"push": "npm run test && npm publish"
