@@ -4,6 +4,8 @@ const regex = /@?import + ?((\w+) +from )?([\'\"])(.*?);?\3/gm;
 const importSass = /@import +([\'\"])(.*?)\1/gm;
 
 const replacer = (match, fromStatement, obj, quote, filename, pathname) => {
+	let isScss = pathname.endsWith('.scss');
+
 	if (!filename.match(/\*/)) {
 		return match;
 	}
@@ -15,6 +17,9 @@ const replacer = (match, fromStatement, obj, quote, filename, pathname) => {
 	var result = fg
 		.sync(globRelativePath, { cwd: cwdPath })
 		.map((file) => {
+			if (pathname.endsWith(file)) {
+				return '';
+			}
 			var fileName = quote + prefix + file + quote;
 
 			if (match.match(importSass)) {
@@ -24,7 +29,7 @@ const replacer = (match, fromStatement, obj, quote, filename, pathname) => {
 				process.exit(1);
 			}
 		})
-		.join('; ');
+		.join(isScss ? '; ' : '\n');
 
 	if (!result) {
 		console.error('Empty results for "' + match + '"');
