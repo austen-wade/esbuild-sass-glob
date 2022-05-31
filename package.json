@@ -1,6 +1,6 @@
 {
 	"name": "esbuild-sass-glob",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"description": "Allows glob imports with esbuild-sass-plugin",
 	"main": "index.js",
 	"files": [
@@ -13,7 +13,11 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "github.com/austen-wade/esbuild-sass-glob"
+		"url": "https://github.com/austen-wade/esbuild-sass-glob.git"
+	},
+	"homepage": "https://github.com/austen-wade/esbuild-sass-glob#readme",
+	"bugs": {
+		"url": "https://github.com/austen-wade/esbuild-sass-glob/issues"
 	},
 	"keywords": [
 		"esbuild",
