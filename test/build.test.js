@@ -9,19 +9,12 @@ import { readFileSync } from 'fs';
 
 const __filename = fileURLToPath(import.meta.url);
 
-// 👇️ "/home/john/Desktop/javascript"
 const __dirname = path.dirname(__filename);
 console.log('directory-name 👉️', __dirname);
 
 const TEST_OUT_DIR = './test/testout';
 
 const testAgainstExpected = (compiledContent, expectedContent) => {
-	// let slicedContent = compiledContent.split('\n');
-	// slicedContent.shift();
-	// compiledContent = slicedContent.join();
-
-	// console.log({ compiledContent, expectedContent });
-
 	return compiledContent === expectedContent;
 };
 const CWD = process.cwd();
