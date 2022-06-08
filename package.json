@@ -1,6 +1,6 @@
 {
 	"name": "esbuild-sass-glob",
-	"version": "1.0.7",
+	"version": "1.0.8",
 	"description": "Allows glob imports with esbuild-sass-plugin",
 	"main": "index.js",
 	"files": [
